@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocolo de Ativação do Leite Materno - Curso Completo</title>
+    <meta name="description" content="Descubra como ativar sua produção de leite materno em apenas 3 dias. Método 100% natural sem fórmulas artificiais. Oferta limitada!">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #fdf2f8 0%, #f8fafc 50%, #fce7f3 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Pulse Animation */
+        .pulse-button {
+            animation: pulse-scale 2s infinite;
+        }
+
+        @keyframes pulse-scale {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 6px 20px rgba(34, 197, 94, 0.3);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 8px 25px rgba(34, 197, 94, 0.5);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 6px 20px rgba(34, 197, 94, 0.3);
+            }
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #ec4899 0%, #be185d 100%);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            box-shadow: 0 4px 20px rgba(236, 72, 153, 0.2);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            line-height: 1.2;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+            font-weight: 500;
+        }
+
+        /* Course Image Section */
+        .course-image {
+            background: linear-gradient(to bottom, #be185d, #fdf2f8);
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .course-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+        }
+
+        /* CTA Buttons */
+        .cta-button {
+            background: linear-gradient(to right, #22c55e, #16a34a);
+            color: white;
+            font-weight: bold;
+            padding: 16px 32px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 6px 20px rgba(34, 197, 94, 0.3);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+            margin: 10px auto;
+        }
+
+        .cta-button:hover {
+            background: linear-gradient(to right, #16a34a, #15803d);
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(34, 197, 94, 0.5);
+        }
+
+        /* Guarantee Section */
+        .guarantee {
+            background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 40px 0;
+            text-align: center;
+            border: 2px solid #22c55e;
+        }
+
+        .guarantee h3 {
+            color: #166534;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .guarantee p {
+            color: #166534;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        /* Scientific Studies */
+        .studies-section {
+            background: white;
+            padding: 60px 20px;
+            margin: 40px 0;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .studies-section h2 {
+            color: #1e40af;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 4px solid #1e40af;
+            padding-bottom: 15px;
+        }
+
+        .studies-section p {
+            text-align: center;
+            font-size: 1.1rem;
+            color: #374151;
+            margin-bottom: 40px;
+            font-weight: 500;
+        }
+
+        .studies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .study-item {
+            background: #f8fafc;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            border: 2px solid #e2e8f0;
+            transition: transform 0.3s ease;
+        }
+
+        .study-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .study-item img {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .study-item p {
+            font-size: 0.9rem;
+            color: #4b5563;
+            margin: 0;
+        }
+
+        /* Plans Section */
+        .plans-section {
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            margin: 40px 0;
+            border-radius: 20px;
+        }
+
+        .plans-section h2 {
+            color: #0c4a6e;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(12, 74, 110, 0.1);
+        }
+
+        .plans-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .plan-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border: 3px solid transparent;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        .plan-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .plan-card.popular {
+            border-color: #f59e0b;
+            transform: scale(1.05);
+        }
+
+        .popular-badge {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .plan-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #1f2937;
+        }
+
+        .plan-price {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #059669;
+            margin: 20px 0;
+        }
+
+        .plan-original-price {
+            color: #9ca3af;
+            text-decoration: line-through;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .plan-features {
+            list-style: none;
+            margin: 30px 0;
+            text-align: left;
+        }
+
+        .plan-features li {
+            padding: 8px 0;
+            font-size: 1rem;
+            color: #374151;
+            display: flex;
+            align-items: center;
+        }
+
+        .plan-features li:before {
+            content: "✓";
+            color: #059669;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+
+        .plan-button {
+            background: linear-gradient(135deg, #059669 0%, #047857 100%);
+            color: white;
+            font-weight: bold;
+            padding: 15px 30px;
+            border-radius: 15px;
+            font-size: 1.1rem;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .plan-button:hover {
+            background: linear-gradient(135deg, #047857 0%, #065f46 100%);
+            transform: scale(1.05);
+        }
+
+        .plan-button.red {
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+        }
+
+        .plan-button.red:hover {
+            background: linear-gradient(135deg, #b91c1c 0%, #991b1b 100%);
+        }
+
+        /* Testimonials Section */
+        .testimonials-section {
+            padding: 60px 20px;
+            background: linear-gradient(to bottom, #fdf2f8, white);
+            margin: 40px 0;
+            border-radius: 20px;
+        }
+
+        .testimonials-section h2 {
+            color: #ec4899;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 4px solid #ec4899;
+            padding-bottom: 15px;
+        }
+
+        .testimonials-section > p {
+            text-align: center;
+            font-size: 1.1rem;
+            color: #374151;
+            margin-bottom: 40px;
+            font-weight: 500;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            gap: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .video-container {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border: 2px solid #fce7f3;
+        }
+
+        .video-container:nth-child(2) {
+            border-color: #dcfce7;
+        }
+
+        .video-container:nth-child(3) {
+            border-color: #dbeafe;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+
+        .testimonials-cta {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .testimonials-cta p {
+            font-size: 1.1rem;
+            color: #374151;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 60px 20px;
+            background: white;
+            margin: 40px 0;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .faq-section h2 {
+            color: #7c3aed;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 4px solid #7c3aed;
+            padding-bottom: 15px;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border: 2px solid #e5e7eb;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            background: #f9fafb;
+            padding: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            color: #374151;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: #f3f4f6;
+        }
+
+        .faq-answer {
+            padding: 20px;
+            background: white;
+            color: #6b7280;
+            display: none;
+        }
+
+        .faq-answer.active {
+            display: block;
+        }
+
+        /* Footer */
+        .footer {
+            background: #1f2937;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .footer-contact {
+            background: linear-gradient(135deg, #ec4899 0%, #be185d 100%);
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+
+        .footer-contact h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .footer-links {
+            font-size: 0.9rem;
+            color: #9ca3af;
+            line-height: 1.8;
+        }
+
+        .footer-links a {
+            color: #fce7f3;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8rem;
+            }
+
+            .header p {
+                font-size: 1rem;
+            }
+
+            .plans-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .plan-card.popular {
+                transform: none;
+            }
+
+            .studies-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .video-container iframe {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- MOBILE EXIT REDIRECT SYSTEM - Easy to find and modify -->
+    <script>
+        // Mobile detection and exit redirect
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        
+        if (isMobile) {
+            let hasTriggered = false;
+            
+            const handleMobileExit = () => {
+                if (!hasTriggered) {
+                    hasTriggered = true;
+                    // TODO: Replace with your future landing page URL
+                    const redirectUrl = '/oferta-especial'; // Change this URL when you create the page
+                    window.location.href = redirectUrl;
+                }
+            };
+
+            // Detect when user tries to leave on mobile
+            window.addEventListener('beforeunload', function(e) {
+                if (!hasTriggered) {
+                    e.preventDefault();
+                    setTimeout(handleMobileExit, 100);
+                    return '';
+                }
+            });
+        }
+
+        // Smooth scroll function
+        function scrollToPlans() {
+            document.getElementById('planos').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // FAQ Toggle
+        function toggleFAQ(index) {
+            const answer = document.getElementById('faq-answer-' + index);
+            const isActive = answer.classList.contains('active');
+            
+            // Close all FAQ answers
+            document.querySelectorAll('.faq-answer').forEach(item => item.classList.remove('active'));
+            
+            // Open clicked one if it wasn't active
+            if (!isActive) {
+                answer.classList.add('active');
+            }
+        }
+
+        // Purchase handlers
+        function handlePurchase(plan) {
+            console.log('Purchasing ' + plan + ' plan');
+            // TODO: Implement payment processing
+        }
+    </script>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1>🌱 Descubra Como Ativar Sua Produção de Leite Materno em Apenas 3 Dias</h1>
+            <p>Sem fórmulas artificiais, sem sofrimento, e com resultados reais.<br>
+            Ajude seu bebê a ganhar de 25g a 45g por dia com o alimento mais completo que existe: seu leite.</p>
+        </div>
+    </header>
+
+    <!-- Course Image Section -->
+    <section class="course-image">
+        <div class="container">
+            <img src="attached_assets/image_1753376954554.png" alt="Protocolo de Ativação do Leite Materno" loading="lazy">
+            
+            <div class="guarantee">
+                <h3>🛡️ Garantia de Resultados</h3>
+                <p>"Risco Zero: Se não funcionar para você, devolvemos seu dinheiro!"</p>
+            </div>
+            
+            <button onclick="scrollToPlans()" class="cta-button pulse-button">
+                QUERO APROVEITAR
+            </button>
+        </div>
+    </section>
+
+    <!-- Scientific Studies Section -->
+    <section class="studies-section">
+        <div class="container">
+            <h2>📚 ESTUDOS CIENTÍFICOS COMPROVAM</h2>
+            
+            <p>A ciência comprova: <strong style="color: #1e40af;">o leite materno é o alimento mais completo</strong> para o desenvolvimento saudável do seu bebê.</p>
+            
+            <div class="studies-grid">
+                <div class="study-item">
+                    <img src="attached_assets/image_1753380420066.png" alt="Estudo científico 1 sobre amamentação" loading="lazy">
+                    <p>Pesquisas mostram que o leite materno contém todos os nutrientes essenciais para o desenvolvimento infantil.</p>
+                </div>
+                
+                <div class="study-item">
+                    <img src="attached_assets/image_1753380883317.png" alt="Estudo científico 2 sobre lactação" loading="lazy">
+                    <p>Estudos comprovam que técnicas adequadas aumentam significativamente a produção de leite materno.</p>
+                </div>
+                
+                <div class="study-item">
+                    <img src="attached_assets/image_1753381063147.png" alt="Estudo científico 3 sobre benefícios" loading="lazy">
+                    <p>Evidências científicas demonstram os benefícios únicos do aleitamento materno para mãe e bebê.</p>
+                </div>
+            </div>
+            
+            <button onclick="scrollToPlans()" class="cta-button pulse-button">
+                QUERO APROVEITAR
+            </button>
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section id="planos" class="plans-section">
+        <div class="container">
+            <h2>💎 ESCOLHA SEU PLANO</h2>
+            
+            <div class="plans-grid">
+                <!-- Basic Plan -->
+                <div class="plan-card">
+                    <h3 class="plan-title">🌸 PLANO BÁSICO</h3>
+                    <div class="plan-original-price">De R$ 15</div>
+                    <div class="plan-price">R$ 10</div>
+                    
+                    <ul class="plan-features">
+                        <li>Ebook "Protocolo de Ativação do Leite Materno"</li>
+                        <li>Técnicas comprovadas para aumentar produção</li>
+                        <li>Guia de alimentação para lactantes</li>
+                        <li>Dicas para pega correta do bebê</li>
+                        <li>Garantia de 30 dias</li>
+                    </ul>
+                    
+                    <button onclick="handlePurchase('basic')" class="plan-button pulse-button">
+                        QUERO O PLANO BÁSICO
+                    </button>
+                </div>
+
+                <!-- Complete Plan -->
+                <div class="plan-card popular">
+                    <div class="popular-badge">🔥 MAIS VENDIDO</div>
+                    <h3 class="plan-title">👑 PLANO COMPLETO</h3>
+                    <div class="plan-original-price">De R$ 25</div>
+                    <div class="plan-price">R$ 19</div>
+                    
+                    <ul class="plan-features">
+                        <li>Ebook "Protocolo de Ativação do Leite Materno"</li>
+                        <li>Videoaulas exclusivas passo a passo</li>
+                        <li>Guia de alimentação para lactantes</li>
+                        <li>Cardápio completo de 30 dias</li>
+                        <li>Lista de compras otimizada</li>
+                        <li>Suporte direto via WhatsApp</li>
+                        <li>Grupo exclusivo de mães</li>
+                        <li>Certificado de conclusão</li>
+                        <li>Garantia de 30 dias</li>
+                    </ul>
+                    
+                    <button onclick="handlePurchase('complete')" class="plan-button pulse-button">
+                        QUERO O PLANO COMPLETO
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2>💬 DEPOIMENTOS REAIS DAS NOSSAS MÃES</h2>
+            
+            <p>Veja o que as mães que já aplicaram nosso protocolo têm a dizer:</p>
+            
+            <div class="testimonials-grid">
+                <!-- Video 1 -->
+                <div class="video-container">
+                    <iframe
+                        src="https://www.youtube.com/embed/pGJSN6O480A"
+                        title="Depoimento 1 - Mãe satisfeita com protocolo"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                
+                <!-- Video 2 -->
+                <div class="video-container">
+                    <iframe
+                        src="https://www.youtube.com/embed/VYNR7tdc04U"
+                        title="Depoimento 2 - Resultados do protocolo de lactação"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                
+                <!-- Video 3 -->
+                <div class="video-container">
+                    <iframe
+                        src="https://www.youtube.com/embed/wK09ej_hteQ"
+                        title="Depoimento 3 - Transformação na amamentação"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                        </iframe>
+                </div>
+            </div>
+            
+            <div class="testimonials-cta">
+                <p><strong style="color: #ec4899;">Centenas de mães</strong> já transformaram sua experiência de amamentação com nosso protocolo.</p>
+                
+                <button onclick="scrollToPlans()" class="cta-button pulse-button">
+                    QUERO APROVEITAR AGORA
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>❓ PERGUNTAS FREQUENTES</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(0)">
+                    E se eu tiver dúvidas durante o curso?
+                    <span>▼</span>
+                </div>
+                <div id="faq-answer-0" class="faq-answer">
+                    Você terá acesso a um grupo exclusivo para suporte e troca com outras mães.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(1)">
+                    O pagamento é seguro?
+                    <span>▼</span>
+                </div>
+                <div id="faq-answer-1" class="faq-answer">
+                    Sim, usamos plataforma 100% segura e com garantia total.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(2)">
+                    Quanto tempo para receber o acesso?
+                    <span>▼</span>
+                </div>
+                <div id="faq-answer-2" class="faq-answer">
+                    Imediato. Após o pagamento, o acesso chega direto no seu e-mail.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(3)">
+                    E se eu me arrepender?
+                    <span>▼</span>
+                </div>
+                <div id="faq-answer-3" class="faq-answer">
+                    Você tem 30 dias para pedir reembolso. Sem perguntas. Sem riscos.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-contact">
+                <h3>💌 Fale Conosco</h3>
+                <p>Dúvidas? Suporte em: <strong>suporte@protocololeitematerno.shop</strong></p>
+            </div>
+            
+            <div class="footer-links">
+                <p>Este site não é afiliado ao Facebook ou qualquer entidade da Meta.</p>
+                <p>
+                    Ao continuar, você concorda com os nossos
+                    <a href="#">Termos de Uso</a> e
+                    <a href="#">Política de Privacidade</a>.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
