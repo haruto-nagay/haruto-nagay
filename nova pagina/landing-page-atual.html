@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Protocolo Leite Materno - Ative Sua Produção em 3 Dias</title>
+    <meta name="description" content="Descubra como ativar sua produção de leite materno em apenas 3 dias. Método 100% natural, sem fórmulas artificiais. Resultados reais com garantia total.">
+    <meta property="og:title" content="Protocolo Leite Materno - Ative Sua Produção em 3 Dias">
+    <meta property="og:description" content="Ajude seu bebê a ganhar de 25g a 45g por dia com o alimento mais completo que existe: seu leite. Oferta limitada por R$10,00.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: 336 84% 57%;
+            --secondary: 200 50% 80%;
+            --accent: 142 76% 73%;
+            --background: 0 0% 100%;
+            --foreground: 222.2 84% 4.9%;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: hsl(var(--foreground));
+            background: hsl(var(--background));
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(to right, #db2777, #f43f5e, #db2777);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        .header h1 {
+            font-size: clamp(1.5rem, 4vw, 3rem);
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            line-height: 1.2;
+        }
+
+        .header p {
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            font-weight: 500;
+        }
+
+        /* Course Image Section */
+        .course-image {
+            background: linear-gradient(to bottom, #be185d, #fdf2f8);
+            padding: 2.5rem 1rem;
+            text-align: center;
+        }
+
+        .course-image img {
+            max-width: 100%;
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin: 0 auto;
+        }
+
+        /* Timer Section */
+        .timer-section {
+            background: linear-gradient(135deg, #fecaca, #fed7d7);
+            padding: 2rem 1rem;
+            text-align: center;
+            border-radius: 20px;
+            margin: 2rem 0;
+            box-shadow: 0 8px 25px rgba(239, 68, 68, 0.15);
+        }
+
+        .timer-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #dc2626;
+            margin-bottom: 1rem;
+        }
+
+        .timer-display {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .timer-unit {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 1rem;
+            border-radius: 10px;
+            min-width: 60px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .timer-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #dc2626;
+            display: block;
+        }
+
+        .timer-label {
+            font-size: 0.875rem;
+            color: #7f1d1d;
+            font-weight: 500;
+        }
+
+        /* Pricing Section */
+        .pricing-section {
+            padding: 3rem 1rem;
+            background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+        }
+
+        .pricing-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #0369a1;
+            margin-bottom: 2rem;
+        }
+
+        .pricing-grid {
+            display: grid;
+            gap: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 768px) {
+            .pricing-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .pricing-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border: 3px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .pricing-card.featured {
+            border-color: #22c55e;
+            transform: scale(1.05);
+            background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        .plan-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .plan-price {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #22c55e;
+            margin-bottom: 1rem;
+        }
+
+        .plan-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .plan-features li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .plan-features li:before {
+            content: "✓";
+            color: #22c55e;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        .cta-button {
+            background: linear-gradient(to right, #22c55e, #16a34a);
+            color: white;
+            font-weight: bold;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 6px 20px rgba(34, 197, 94, 0.3);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .cta-button:hover {
+            background: linear-gradient(to right, #16a34a, #15803d);
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(34, 197, 94, 0.5);
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 3rem 1rem;
+            background: linear-gradient(135deg, #fdf4ff, #f3e8ff);
+        }
+
+        .testimonials-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #7c3aed;
+            margin-bottom: 2rem;
+        }
+
+        .testimonial-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            border-left: 5px solid #7c3aed;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            color: #4b5563;
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            color: #7c3aed;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 3rem 1rem;
+            background: white;
+        }
+
+        .faq-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #1f2937;
+            margin-bottom: 2rem;
+        }
+
+        .faq-item {
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            background: #f9fafb;
+            padding: 1.5rem;
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question:hover {
+            background: #f3f4f6;
+        }
+
+        .faq-answer {
+            padding: 1.5rem;
+            background: white;
+            color: #6b7280;
+            line-height: 1.7;
+        }
+
+        /* Footer */
+        .footer {
+            background: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .timer-display {
+                gap: 0.5rem;
+            }
+            
+            .timer-unit {
+                padding: 0.75rem;
+                min-width: 50px;
+            }
+            
+            .timer-number {
+                font-size: 1.5rem;
+            }
+            
+            .plan-price {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1>🌱 Descubra Como Ativar Sua Produção de Leite Materno em Apenas 3 Dias</h1>
+            <p>Sem fórmulas artificiais, sem sofrimento, e com resultados reais.<br>
+            Ajude seu bebê a ganhar de 25g a 45g por dia com o alimento mais completo que existe: seu leite.</p>
+        </div>
+    </header>
+
+    <!-- Course Image -->
+    <section class="course-image">
+        <div class="container">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f0f9ff'/%3E%3Ctext x='200' y='150' text-anchor='middle' dominant-baseline='middle' font-family='Arial' font-size='20' fill='%23374151'%3EImagem do Curso%3C/text%3E%3C/svg%3E" alt="Curso Protocolo Leite Materno">
+        </div>
+    </section>
+
+    <!-- Timer Section -->
+    <section class="timer-section">
+        <div class="container">
+            <h2 class="timer-title">⏰ Oferta Limitada - Termina em:</h2>
+            <div class="timer-display">
+                <div class="timer-unit">
+                    <span class="timer-number" id="hours">23</span>
+                    <span class="timer-label">Horas</span>
+                </div>
+                <div class="timer-unit">
+                    <span class="timer-number" id="minutes">45</span>
+                    <span class="timer-label">Min</span>
+                </div>
+                <div class="timer-unit">
+                    <span class="timer-number" id="seconds">30</span>
+                    <span class="timer-label">Seg</span>
+                </div>
+            </div>
+            <p style="font-weight: 600; color: #dc2626;">Não perca essa oportunidade única!</p>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+        <div class="container">
+            <h2 class="pricing-title">💖 Escolha Seu Plano</h2>
+            <div class="pricing-grid">
+                <!-- Plano Básico -->
+                <div class="pricing-card">
+                    <h3 class="plan-name">📚 Plano Básico</h3>
+                    <div class="plan-price">R$ 10</div>
+                    <ul class="plan-features">
+                        <li>Protocolo completo em PDF</li>
+                        <li>Guia passo a passo</li>
+                        <li>Dicas de alimentação</li>
+                        <li>Suporte por email</li>
+                        <li>Garantia de 30 dias</li>
+                    </ul>
+                    <button class="cta-button">🚀 QUERO O BÁSICO</button>
+                </div>
+
+                <!-- Plano Completo -->
+                <div class="pricing-card featured">
+                    <h3 class="plan-name">👑 Plano Completo</h3>
+                    <div class="plan-price">R$ 19</div>
+                    <ul class="plan-features">
+                        <li>Tudo do Plano Básico</li>
+                        <li>Vídeoaulas exclusivas</li>
+                        <li>Grupo VIP no WhatsApp</li>
+                        <li>Consultoria ao vivo</li>
+                        <li>Receitas especiais</li>
+                        <li>Acompanhamento personalizado</li>
+                    </ul>
+                    <button class="cta-button">⭐ QUERO O COMPLETO</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="testimonials-title">💬 O Que Dizem Nossas Mães</h2>
+            
+            <div class="testimonial-card">
+                <p class="testimonial-text">"Em 3 dias meu leite voltou! Minha filha estava perdendo peso e eu desesperada. Hoje ela mama tranquila e ganha peso todos os dias. Gratidão!"</p>
+                <p class="testimonial-author">- Ana Carolina, mãe da Sofia (4 meses)</p>
+            </div>
+
+            <div class="testimonial-card">
+                <p class="testimonial-text">"Funcionou mesmo! Achei que nunca conseguiria amamentar. O protocolo é simples e realmente eficaz. Meu bebê está mais feliz e eu também!"</p>
+                <p class="testimonial-author">- Mariana Santos, mãe do Pedro (2 meses)</p>
+            </div>
+
+            <div class="testimonial-card">
+                <p class="testimonial-text">"Método incrível! Em poucos dias já senti a diferença. O mais importante: é tudo natural e sem riscos. Recomendo para todas as mães!"</p>
+                <p class="testimonial-author">- Júlia Lima, mãe da Isabella (6 meses)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="faq-title">❓ Perguntas Frequentes</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>E se eu tiver dúvidas durante o curso?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    Você terá acesso a um grupo exclusivo para suporte e troca com outras mães.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>O pagamento é seguro?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    Sim, usamos plataforma 100% segura e com garantia total.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Quanto tempo para receber o acesso?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    Imediato. Após o pagamento, o acesso chega direto no seu e-mail.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>E se eu me arrepender?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    Você tem 30 dias para pedir reembolso. Sem perguntas. Sem riscos.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Protocolo Leite Materno. Todos os direitos reservados.</p>
+            <p>Transformando a maternidade através da amamentação natural.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Timer funcional
+        function updateTimer() {
+            const now = new Date().getTime();
+            const tomorrow = new Date();
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            tomorrow.setHours(0, 0, 0, 0);
+            
+            const distance = tomorrow.getTime() - now;
+            
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+
+        // Atualizar timer a cada segundo
+        setInterval(updateTimer, 1000);
+        updateTimer();
+
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const answer = faqItem.querySelector('.faq-answer');
+                const icon = question.querySelector('span:last-child');
+                
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                    icon.textContent = '+';
+                } else {
+                    // Fechar outras respostas
+                    document.querySelectorAll('.faq-answer').forEach(ans => ans.style.display = 'none');
+                    document.querySelectorAll('.faq-question span:last-child').forEach(ic => ic.textContent = '+');
+                    
+                    answer.style.display = 'block';
+                    icon.textContent = '-';
+                }
+            });
+        });
+
+        // Botões de compra
+        document.querySelectorAll('.cta-button').forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Redirecionando para pagamento...');
+                // Aqui você adicionaria a integração com o sistema de pagamento
+            });
+        });
+    </script>
+</body>
+</html>
